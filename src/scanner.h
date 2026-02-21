@@ -1,6 +1,8 @@
 #ifndef SCANNER_H
 #define SCANNER_H
 
-void scan_directory(const char *path);
+#include "file_entry.h"
+
+int scan_directory(const char *path, FileEntry *files, int maxFiles);
 
 #endif
