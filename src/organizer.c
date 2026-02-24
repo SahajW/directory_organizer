@@ -35,7 +35,7 @@ static void make_folder(const char *path)
         mkdir(path);
 }
 
-void organize_files(FileEntry *files, int total, int *isDuplicate)
+void organize_files(FileEntry *files, int total, int *isDuplicate, Summary *s)
 {
     int i;
     for (i = 0; i < total; i++)
